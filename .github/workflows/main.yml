@@ -74,7 +74,7 @@ jobs:
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY }} # исправлено на гите[5]
           passphrase: ${{ secrets.PASSPHRASE }} # Если ваш ssh-ключ защищён фразой-паролем
-          fingerprint: ${{ secrets.FINGERPRINT }}
+#          fingerprint: ${{ secrets.FINGERPRINT }}
           script: |
             # Выполняет pull образа с DockerHub
             sudo docker pull alxaxenov/infra_actions
